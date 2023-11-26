@@ -32,7 +32,6 @@ resource "aws_instance" "blog" {
 module "blog_sg" {
   source      = "terraform-aws-modules/security-group/aws"
   name        = "blog_new"
-  description = "Security group for web-server with HTTP ports open within VPC"
 
   vpc_id = data.aws_vpc.default.id
 
