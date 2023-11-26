@@ -79,11 +79,6 @@ module "alb" {
       target_group_index = 0
     }
 
-
-  tags = {
-    Environment = "Development"
-    Project     = "Example"
-  }
 }
 
 
